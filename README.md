@@ -24,7 +24,7 @@ Antes de começar, você precisa ter instalado:
 
 1. **Clone este repositório:**
 
-    - git clone https://github.com/seu-usuario/tasks-api.git
+    - git clone https://github.com/CaarlosDev/tasks-api.git
     - cd tasks-api
 
 3. **Suba os containers com Docker Compose:**
