@@ -32,9 +32,9 @@ Antes de começar, você precisa ter instalado:
     - docker-compose up --build -d
 
    Isso irá:
-    Criar e iniciar o container da API em http://localhost:5039
-    Criar o container do banco PostgreSQL
-    Aplicar as migrations automaticamente na inicialização
+    - Criar e iniciar o container da API em http://localhost:5039
+    - Criar o container do banco PostgreSQL
+    - Aplicar as migrations automaticamente na inicialização
 
 4. **A API estará disponível em:**
 
