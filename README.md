@@ -40,7 +40,7 @@ Antes de começar, você precisa ter instalado:
 
     - http://localhost:5039
   
-Exemplos de endpoints:
+    Exemplos de endpoints:
     - POST /api/auth/register → Realiza registro de usuário
     - POST /api/auth/login → Realiza login do usuário
     - GET /api/tarefas → Lista tarefas
