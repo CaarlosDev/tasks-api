@@ -1,0 +1,28 @@
+version: "3.8"
+
+services:
+  db:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: tasks_admin
+      POSTGRES_PASSWORD: tasks1234
+      POSTGRES_DB: tasksDB
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  api:
+    build: .
+    depends_on:
+      - db
+    ports:
+      - "5039:5039"
+    environment:
+      ASPNETCORE_URLS: http://+:5039
+      ConnectionStrings__DefaultConnection: "Host=db;Port=5432;Database=tasksDB;Username=tasks_admin;Password=tasks1234"
+      JwtSettings__SecretKey: "cefe4f8adcb2402f816e1e418f9e8b40c01e3911a1ae8bc37004c975c4db3922"
+    restart: on-failure
+
+volumes:
+  pgdata:
