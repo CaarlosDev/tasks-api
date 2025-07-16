@@ -27,7 +27,7 @@ Antes de começar, você precisa ter instalado:
     git clone https://github.com/seu-usuario/tasks-api.git
     cd tasks-api
 
-2. **Suba os containers com Docker Compose:**
+3. **Suba os containers com Docker Compose:**
 
     docker-compose up --build -d
 
@@ -36,7 +36,7 @@ Antes de começar, você precisa ter instalado:
     Criar o container do banco PostgreSQL
     Aplicar as migrations automaticamente na inicialização
 
-3. **A API estará disponível em:**
+4. **A API estará disponível em:**
 
     http://localhost:5039
 
